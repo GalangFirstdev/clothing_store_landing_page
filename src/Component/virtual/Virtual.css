@@ -1,0 +1,65 @@
+.Virtual-S {
+    background: rgb(63, 76, 78);
+    height: 66vh;
+    margin-top: 3.2rem;
+}
+
+.Virtual-S {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.left>:nth-child(1) {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+}
+
+.left>:nth-child(2) {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+}
+
+.left>:nth-child(3) {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+.wrapper_s {
+    width: 30rem;
+}
+
+@media screen and (max-width:780px) {
+    .Virtual-S {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .left {
+        margin-top: 6rem;
+    }
+
+    .wrapper_s {
+        width: 40vh;
+    }
+}

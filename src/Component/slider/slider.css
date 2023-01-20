@@ -1,0 +1,92 @@
+.s-container {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.s-container .swiper {
+    width: 80%;
+    height: 13rem;
+    position: unset;
+}
+
+
+.s-container .swiper-slide {
+    background-color: rgb(155, 155, 124);
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.s-container .swiper-button-prev {
+    left: 6rem;
+}
+
+.s-container .swiper-button-next {
+    right: 6rem;
+}
+
+.s-container .swiper-button-prev,
+.s-container .swiper-button-next {
+    color: black;
+}
+
+.left-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name> :nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.name> :nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.left-s> :nth-child(2) {
+    /* font-weight: bold; */
+    font-style: 2rem;
+}
+
+.left-s> :nth-child(3) {
+    font-weight: 0.6rem;
+    border: 1px solid black;
+    padding: 2px 15px;
+    width: min-content;
+    border-radius: 15px;
+    font-size: 0.7rem;
+}
+
+.img-products {
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    bottom: -20%;
+}
+
+@media screen and (max-width: 844px) {
+    .s-container .swiper {
+        width: 90%;
+        height: 9em;
+
+
+    }
+
+    .s-container .swiper-button-prev,
+    .s-container .swiper-button-next {
+        display: none;
+    }
+}
